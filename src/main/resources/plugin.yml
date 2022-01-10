@@ -1,0 +1,9 @@
+name: Welcome
+version: '${project.version}'
+main: xyz.rootdev.welcome.Welcome
+api-version: 1.17
+
+commands:
+  welcome:
+    description: Send the welcome message
+    permission: welcome.welcome
