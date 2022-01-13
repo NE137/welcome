@@ -18,9 +18,10 @@ public final class Welcome extends JavaPlugin {
         config.addDefault("welcomeMessage", "Welcome message here");
         config.options().copyDefaults(true);
         saveConfig();
+        this.getCommand("welcome").setExecutor(this.commands);
     }
 
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        return this.commands.onCommand(sender, command, label, args);
-    }
+//    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+//        return this.commands.onCommand(sender, command, label, args);
+//    }
 }
